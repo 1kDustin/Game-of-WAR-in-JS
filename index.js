@@ -14,7 +14,7 @@ class Deck {
     // adds 52 cards
     constructor(name) {
         this.suits = ['spades', 'diamonds', 'clubs', 'hearts'];
-        this.values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+        this.values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
         this.name = name;
         this.cards = [];
         for (let i = 0; i < this.suits.length; i++) {
@@ -57,7 +57,9 @@ class Player {
 
     // ... expands cards so that its gonna do push() for every single card
     addCards(cards) {
-      this.hand.push(...cards);
+        if (cards == null) return;
+        if (cards instanceof Card) this.hand.push(cards) 
+        else this.hand.push(...cards);
     }
   
     addPoint() {

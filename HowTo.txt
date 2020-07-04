@@ -1,0 +1,11 @@
+I created a class for Card to clarifiy the cards that each player plays down per round.
+I also gave the card class a methos of isGreaterThan to help clarify which value is greater to 
+determine the winner of the round.
+
+I then created a class for deck to create the deck of cards.. or 52 different objects.
+In the class I created a suits and values parameter and ran a for loop to pair each value to 
+each suit. then I pushed 52 objects to the cards class.
+
+I created a shuffle function and inside the function I created a new array of cards. This array
+was called shuffledDeck. 
+
