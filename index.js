@@ -58,7 +58,7 @@ class Player {
     // ... expands cards so that its gonna do push() for every single card
     addCards(cards) {
         if (cards == null) return;
-        if (cards instanceof Card) this.hand.push(cards) 
+        if (cards instanceof Card) this.hand.push(cards)
         else this.hand.push(...cards);
     }
   
@@ -68,7 +68,7 @@ class Player {
   
 }
  
-let deck = new Deck("Dave");
+let deck = new Deck("Deck of Cards");
 //console.log(deck);
 deck.shuffle();
 //console.log(deck);
